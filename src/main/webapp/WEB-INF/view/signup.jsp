@@ -39,33 +39,33 @@
 		<table style="width: 80%;" class="table center">
 			<tr>
 				<td><form:label path="username" for="username">User Name:</form:label></td>
-				<td><form:input path="username" type="text"  class="form-control" id="username"/></td> 
+				<td><form:input path="username" required="required" type="text"  class="form-control" id="username"/></td> 
 			</tr>
 			
 			<tr>
 				<td><form:label path="email" for="email">Email address:</form:label></td>
-				<td><form:input path="email" type="email" placeholder="example@domain.com" class="form-control" id="email" autofocus="true"/></td>
+				<td><form:input path="email" required="required" type="email" placeholder="example@domain.com" class="form-control" id="email" autofocus="true"/></td>
 			</tr>
 			
 			<tr>
 				<td><form:label path="password" for="password">Password:</form:label></td>
-				<td><form:input path="password" type="password" class="form-control" id="password"/></td>
+				<td><form:input path="password" required="required" type="password" class="form-control" id="password"/></td>
 			</tr>
 							  	
 			<tr>
 				<td><form:label path="cPassword" for="cPassword">Confirm Password:</form:label></td>
-				<td><form:input path="cPassword" type="password" class="form-control" id="cPassword"/></td>
+				<td><form:input path="cPassword" required="required" type="password" class="form-control" id="cPassword"/></td>
 
 			</tr>
 							  	
 			<tr>
 				<td><form:label path="phone" for="phone">Phone:</form:label></td>
-				<td><form:input path="phone" type="phone" class="form-control" id="phone"/></td>
+				<td><form:input path="phone" required="required" type="phone" pattern="[789][0-9]{9}" title="phone number with 7-9 and remaining 9 digit with 0-9" class="form-control" id="phone"/></td>
 			</tr>
 				
 			<tr>
 				<td><form:label path="location" for="location">Address:</form:label></td>
-				<td><form:textarea path="location" class="form-control" id="location"></form:textarea></td>
+				<td><form:textarea path="location" required="required" class="form-control" id="location"></form:textarea></td>
 			</tr>
 							  	
 			<tr>
@@ -79,7 +79,7 @@
 							  	
 		  </table>
 		<!--  -->
-	
+	<p class="change_link">Already a member ? <a href="index">Go to Index</a></p>
 	</form:form>	
 </div>	
 </div>
